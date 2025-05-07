@@ -1,0 +1,15 @@
+#print("hey I am Chatbot")
+#name=input("What is your name? ")
+#print("nice to meet you " +name)
+#hobby=input("What is your hobby? ")
+#print(f"{hobby} seems fun")
+#print("Asking how is your mood(good/bad)")
+#mood=input().lower()
+
+#name=input("tell me your name")
+#print(name)
+#print("Add two number", 3+5)
+#print(4+5)
+print("welcome")
+age=input("ENter your age") # this is an input statement
+print("Your age is " +age)
