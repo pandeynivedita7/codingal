@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Convert a JavaScript object into a JSON string, and send it to the server.</h2>
+    <p id="result"></p>
+    <script>// beginning of java script block
+      var myObj = { name: "NIvedita", age: 12, grade: 7 };// 3variable 
+      var myJSON = JSON.stringify(myObj); // converts object to JSON for sending data
+      var newObj = JSON.parse(myJSON); // converts JSON into object while receiving data 
+      document.getElementById("result").innerHTML = newObj.name;
+    </script>
+  </body>
+</html>
+//json JavaScript object notation used data interchange text format syntax
+// exchanging data browser and sever 
+//sending data js object json.stringify()
+// Recieving data from server json.parse()
+// code 2 produce executing code it will take time or consume waiting for result producer
+//result value
+// error object
+//await/asyn producing then only i can consume

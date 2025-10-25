@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Find Maximum Number</title>
+  </head>
+  <body>
+    <!-- Displaying a message on the page -->
+    <p>Finding the largest number with help of Argument Objects</p>
+
+    <!-- This paragraph will display the result -->
+    <p id="result"></p>
+
+    <script>
+      // Function to find the maximum number using the 'arguments' object reuse
+      function findMax() {
+        // Start with 0 as the initial maximum value
+        var max = 0;
+
+        // Loop through all arguments passed to the function
+        for (var i = 0; i < arguments.length; i++) {
+          // If current argument is greater than max, update max
+          if (arguments[i] > max) {
+            max = arguments[i];
+          }
+        }
+
+        // Return the largest number found
+        return max;
+      } 
+
+      // Call the function with multiple arguments and display the result in the paragraph with id="result"
+      document.getElementById("result").innerHTML = 
+        "The largest number is: " + findMax(8, 4, 5, 6, 2);
+    </script>
+
+  </body>
+</html>

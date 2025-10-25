@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2> Operator</h2>
+<p id="num"></p>
+<p id="num1"></p>
+<p id="num2"></p>
+<p id="num3"></p>
+<p id="num4"></p>
+<p id="num5"></p>
+<p id="num6"></p>
+<p id="num7"></p>
+
+<script>
+// // This is an HTML comment within script tags, better to use JS comments
+// Addition
+var a = 16;
+var b = 25;
+
+// Basic Arithmetic Operations
+var sum1 = a + b;
+var sum2 = a - b;
+var sum3 = a * b;
+var sum4 = a / b;
+
+// Displaying Basic Arithmetic Results
+// You need a '+' to concatenate strings and variables in JavaScript
+document.getElementById("num").innerHTML = "The output of a + b is " + sum1;
+document.getElementById("num1").innerHTML = "The output of a - b is " + sum2;
+document.getElementById("num2").innerHTML = "The output of a * b is " + sum3;
+document.getElementById("num3").innerHTML = "The output of a / b is " + sum4; // Added descriptive text
+
+// Compound Assignment Operators
+// You need to initialize x, y, z, n before using compound assignments
+var x = 10; // Example initial value
+var y = 50; // Example initial value
+var z = 5;  // Example initial value
+var n = 100; // Example initial value
+
+x += 16; // x = x + 16; (10 + 16 = 26)
+y -= 28; // y = y - 28; (50 - 28 = 22)
+z *= 55; // z = z * 55; (5 * 55 = 275)
+n /= 78; // n = n / 78; (100 / 78 = 1.282...)
+
+// Displaying Compound Assignment Results
+document.getElementById("num4").innerHTML = "x after += 16 is: " + x;
+document.getElementById("num5").innerHTML = "y after -= 28 is: " + y;
+document.getElementById("num6").innerHTML = "z after *= 55 is: " + z;
+document.getElementById("num7").innerHTML = "n after /= 78 is: " + n;
+</script>
+
+</body>
+</html>

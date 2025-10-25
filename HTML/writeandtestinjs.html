@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>The test() method returns true if it finds a match, otherwise it returns false.</p>
+    <p>Click the button to search a string for the character "about".</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        var str = "I learnt about Methods";
+        var patt = new RegExp("try");
+        var res = patt.test(str);
+        document.getElementById("demo").innerHTML = res;
+      }
+    </script>
+  </body>
+</html>

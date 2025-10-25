@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h2>The JavaScript <i>this</i> Keyword</h2>
+  
+    <p id="object_value"></p>
+    <p id="function_value"></p>
+    <script>
+      // Create an object:
+      var person = {
+        firstName: "John",
+        lastName : "Doe",
+        id     : 5566,
+        fullName : function() {
+          return this.firstName + " " + this.lastName;
+        }
+      };
+      // Create a function:
+      function myFunction() {
+        return this;
+      }
+      // Display data from the object:
+      // this represents the person object
+      document.getElementById("object_value").innerHTML = person.fullName();
+      // Display data from the function:
+      // this represents the object that "owns" myFunction
+      document.getElementById("function_value").innerHTML = myFunction();
+    </script>
+</body>
+</html>

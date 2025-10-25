@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Callbacks</title>
+    <!-- Tailwind CSS for basic styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles to ensure consistent font and rounded corners */
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #f0f0f0; /* Light grey background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Full viewport height */
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #ffffff; /* White background for the content box */
+            padding: 30px;
+            border-radius: 12px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            text-align: center;
+            max-width: 500px; /* Max width for better readability on large screens */
+            width: 100%; /* Fluid width */
+        }
+        h2 {
+            color: #333; /* Darker text for heading */
+            margin-bottom: 15px;
+        }
+        p {
+            color: #555; /* Slightly lighter text for paragraphs */
+            margin-bottom: 10px;
+        }
+        #result {
+            font-weight: bold;
+            color: #007bff; /* Blue color for the result */
+            font-size: 1.5em; /* Larger font size for the result */
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9f5ff; /* Light blue background for result */
+            border-radius: 8px; /* Rounded corners for result box */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Main heading for the page -->
+        <h2 class="text-2xl font-bold mb-4">JavaScript Callbacks</h2>
+        <!-- Paragraph explaining the purpose of the script -->
+        <p class="text-base mb-6">Do a calculation and then display the result using a callback function.</p>
+
+        <!-- Paragraph where the result will be displayed by JavaScript -->
+        <p id="result" class="text-lg"></p>
+
+        <script>
+                function myDisplayer(value) {
+                document.getElementById("result").innerHTML = value;
+            }
+            function myCalculator(num1, num2, myCallback) {
+                let sum = num1 + num2; // Perform the addition
+                myCallback(sum);       // Call the provided callback function with the sum
+            }
+            myCalculator(5, 5, myDisplayer);
+        </script>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+height = float(input("Enter your height in cm: "))# input is string converting to float
+weight = float(input("Enter your weight in kg: "))
+
+BMI = weight / (height/100)**2#power sign formula percendence who has higher priorty () */ % +- >> << binary 0 1 shift 
+# // ** power symbol 2^2
+
+print("Your BMI is", BMI)
+
+if BMI <= 18.4:# giving condition
+    print("You are underweight.")
+elif BMI <= 24.9:
+    print("You are healthy.")
+elif BMI <= 29.9:
+    print("You are over weight.")
+elif BMI <= 34.9:
+    print("You are severely over weight.")
+elif BMI <= 39.9:
+    print("You are obese.")
+else:
+    print("You are severely obese.")
+
+    # 1 true and 1 false
+    # mulitple condition if elif else
+    # if elif else

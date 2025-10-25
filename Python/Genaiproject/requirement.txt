@@ -1,0 +1,8 @@
+gradio==4.44.0
+torch>=2.6.0
+transformers>=4.44.2
+youtube-transcript-api==0.6.2
+pytube==15.0.0
+openai-whisper==20240930
+ffmpeg-python==0.2.0
+future==1.0.0

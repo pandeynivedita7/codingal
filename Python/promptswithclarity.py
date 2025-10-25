@@ -1,0 +1,50 @@
+# Import Google Generative AI SDK and config file
+from google import genai  # Use this for Google Gemini
+import config             # API key stored in config.py
+
+# Initialize the AI client with the API key from config.py
+client = genai.Client(api_key=config.GEMINI_API_KEY)
+
+# Function to generate AI responses
+def generate_response(prompt):
+    response = client.models.generate_content(
+        model="gemini-2.0-flash",  # Replace with GPT model if using OpenAI
+        contents=prompt
+    )
+    return response.text
+
+# Function to interactively guide the user in creating specific prompts
+def silly_prompt():
+    print("Welcome to the AI Prompt Engineering Tutorial!")
+    print("In this activity, we will learn about **Clarity and Specificity** and **Contextual Information** in crafting prompts for AI.")
+    print("\nLet's start by crafting a vague prompt, making it more specific, and then adding context.")
+
+    # Step 1: Vague Prompt Creation
+    vague_prompt = input("\nPlease enter a vague prompt (e.g., 'Tell me about technology'): ")
+    print(f"\nYour vague prompt: {vague_prompt}")
+    vague_response = generate_response(vague_prompt)
+    print("\nAI's response to the vague prompt:")
+    print(vague_response)
+
+    # Step 2: Make the Prompt Clear and Specific
+    specific_prompt = input("\nNow, make the prompt more specific (e.g., 'Explain how AI works in self-driving cars'): ")
+    print(f"\nYour specific prompt: {specific_prompt}")
+    specific_response = generate_response(specific_prompt)
+    print("\nAI's response to the specific prompt:")
+    print(specific_response)
+
+    # Step 3: Add Context to the Prompt
+    contextual_prompt = input("\nNow, add context to your specific prompt (e.g., 'Given the advancements in autonomous vehicles, explain how AI is used in self-driving cars to make real-time driving decisions'): ")
+    print(f"\nYour contextual prompt: {contextual_prompt}")
+    contextual_response = generate_response(contextual_prompt)
+    print("\nAI's response to the contextual prompt:")
+    print(contextual_response)
+
+    # Reflection Questions
+    print("\n--- Reflection ---")
+    print("1. How did the AI's response change when the prompt was made more specific?")
+    print("2. How did the AI's response improve with the added context?")
+    print("3. Which prompt produced the most relevant and tailored response? Why?")
+
+# Run the interactive tutorial
+silly_prompt()

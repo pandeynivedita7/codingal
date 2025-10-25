@@ -1,0 +1,18 @@
+[
+    {
+        "Language": "German",
+        "FLORES-200 code": "deu_Latn"
+    },
+    {
+        "Language": "French",
+        "FLORES-200 code": "fra_Latn"
+    },
+    {
+        "Language": "Hindi",
+        "FLORES-200 code": "hin_Deva"
+    },
+    {
+        "Language": "Romanian",
+        "FLORES-200 code": "ron_Latn"
+    }
+]

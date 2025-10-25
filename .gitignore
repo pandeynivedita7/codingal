@@ -1,0 +1,42 @@
+# ===============================
+# Python cache and compiled files
+# ===============================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ===============================
+# Jupyter Notebook checkpoints
+# ===============================
+.ipynb_checkpoints/
+
+# ===============================
+# Environment / secret files
+# ===============================
+.env
+*.env
+config.py
+credentials.json
+
+# ===============================
+# Local Python packages
+# ===============================
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ===============================
+# OS generated files
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# Zip or temporary files
+# ===============================
+*.zip
+*.log
+*.tmp
+Scratch/whereby-22d421ca-d284-49b2-86d1-051e44e9e485-07-Aug-2025-1631-GMT%2B530.webm
+*.webm

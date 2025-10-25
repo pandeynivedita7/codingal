@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JS as External Button</title>
+</head>
+
+<body>
+  <p>Adding JS as separate file</p>
+  <button type="button" onclick="myFunction()">Click Me!</button>
+  <p id="demo"></p>
+
+  <script>// js math function
+    function myFunction() {// reuse
+      var a = 4;
+      document.getElementById("demo").innerHTML = a * a;
+    }
+  </script>
+</body>
+
+</html>

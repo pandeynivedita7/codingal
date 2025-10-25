@@ -1,0 +1,143 @@
+import re, random
+from colorama import Fore, init
+
+# Initialize colorama
+init(autoreset=True)
+
+# -------------------------
+# Knowledge Base
+# -------------------------
+destinations = {
+    "beaches": ["Bali", "Maldives", "Phuket"],
+    "mountains": ["Swiss Alps", "Rocky Mountains", "Himalayas"],
+    "cities": ["Tokyo", "Paris", "New York"]
+}
+
+jokes = [
+    "Why don't programmers like nature? Too many bugs!",
+    "Why did the computer go to the doctor? Because it had a virus!",
+    "Why do travelers always feel warm? Because of all their hot spots!"
+]
+
+# Memory
+last_suggestion = None
+
+# -------------------------
+# Helper Functions
+# -------------------------
+def normalize_input(text):
+    """Clean user input for matching"""
+    return re.sub(r"\s+", " ", text.strip().lower())
+
+def match_intent(user_input):
+    """Match user input to an intent using keywords"""
+    keywords = {
+        "recommend": ["recommend", "suggest", "plan", "trip", "holiday"],
+        "packing": ["pack", "packing", "luggage", "bag"],
+        "joke": ["joke", "funny", "laugh", "humor"],
+        "greet": ["hi", "hello", "hey", "good morning", "good evening"],
+        "exit": ["exit", "bye", "quit", "goodbye"],
+        "help": ["help", "options", "commands"]
+    }
+    for intent, words in keywords.items():
+        if any(word in user_input for word in words):
+            return intent
+    return None
+
+# -------------------------
+# Chatbot Skills
+# -------------------------
+def recommend():
+    global last_suggestion
+    print(Fore.CYAN + "TravelBot: Beaches, mountains, or cities?")
+    preference = normalize_input(input(Fore.YELLOW + "You: "))
+
+    if preference in destinations:
+        suggestion = random.choice(destinations[preference])
+        last_suggestion = suggestion
+        print(Fore.GREEN + f"TravelBot: How about {suggestion}?")
+        print(Fore.CYAN + "TravelBot: Do you like it? (yes/no)")
+        answer = input(Fore.YELLOW + "You: ").lower()
+
+        if answer == "yes":
+            print(Fore.GREEN + f"TravelBot: Awesome! Enjoy {suggestion}!")
+        elif answer == "no":
+            print(Fore.RED + "TravelBot: Let’s try another.")
+            recommend()
+        else:
+            print(Fore.RED + "TravelBot: I’ll suggest again.")
+            recommend()
+    else:
+        print(Fore.RED + "TravelBot: Sorry, I don’t know that type of destination.")
+    
+    show_help()
+
+def packing_tips():
+    print(Fore.CYAN + "TravelBot: Where to?")
+    location = normalize_input(input(Fore.YELLOW + "You: "))
+    print(Fore.CYAN + "TravelBot: How many days?")
+    
+    try:
+        days = int(input(Fore.YELLOW + "You: ") or "0")
+    except ValueError:
+        days = 0
+
+    print(Fore.GREEN + f"TravelBot: Packing tips for {days} days in {location}:")
+    if days <= 3:
+        print(Fore.GREEN + "- Travel light, just essentials.")
+    elif days <= 7:
+        print(Fore.GREEN + "- Pack versatile outfits for multiple days.")
+    else:
+        print(Fore.GREEN + "- Consider laundry options and extra supplies.")
+    print(Fore.GREEN + "- Don’t forget chargers, adapters, and to check the weather!")
+
+def tell_joke():
+    print(Fore.YELLOW + f"TravelBot: {random.choice(jokes)}")
+
+def show_help():
+    print(Fore.MAGENTA + "\nI can:")
+    print(Fore.GREEN + "- Suggest travel spots (say 'recommendation' or 'trip')")
+    print(Fore.GREEN + "- Offer packing tips (say 'packing' or 'bag')")
+    print(Fore.GREEN + "- Tell a joke (say 'joke' or 'funny')")
+    print(Fore.CYAN + "Type 'exit' or 'bye' to end.\n")
+
+# -------------------------
+# Main Chat Loop
+# -------------------------
+def chat():
+    print(Fore.CYAN + "Hello! I'm TravelBot.")
+    name = input(Fore.YELLOW + "Your name? ")
+    print(Fore.GREEN + f"Nice to meet you, {name}!")
+
+    show_help()
+
+    while True:
+        user_input = normalize_input(input(Fore.YELLOW + f"{name}: "))
+        intent = match_intent(user_input)
+
+        if intent == "recommend":
+            recommend()
+        elif intent == "packing":
+            packing_tips()
+        elif intent == "joke":
+            tell_joke()
+        elif intent == "greet":
+            print(Fore.CYAN + f"TravelBot: Hello {name}, how can I help?")
+        elif intent == "help":
+            show_help()
+        elif intent == "exit":
+            confirm = input(Fore.YELLOW + "Are you sure you want to exit? (yes/no): ").lower()
+            if confirm == "yes":
+                print(Fore.CYAN + "TravelBot: Safe travels! Goodbye!")
+                break
+        elif "another" in user_input and last_suggestion:
+            print(Fore.CYAN + f"TravelBot: Another suggestion instead of {last_suggestion}?")
+            recommend()
+        else:
+            print(Fore.RED + "TravelBot: Hmm, I didn’t get that. Try 'recommendation', 'packing', or 'joke'.")
+
+# -------------------------
+# Run the chatbot
+# -------------------------
+if __name__ == "__main__":
+    chat()

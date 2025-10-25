@@ -1,0 +1,11 @@
+# Initialise variable
+var = 10
+
+# Iterate loop
+while var > 0:
+    var = var - 1
+    if var == 5:  # condition 1
+        continue  # skip this iteration
+    print("Current variable value:", var)  # display result
+
+print("Good bye!")  # display farewell
