@@ -39,7 +39,7 @@ class RestaurantOrderManagement:
         self.menu_quantities = {}
 
         # Create labels and entry widgets for each menu item
-        for i, (item, price) in enumerate(self.menu_items.items(), start=1):
+        for i, (item, price) in enumerate(self.menu_items.items(), start=1):#enumerate(iterable, start=0)
             label = ttk.Label(
                 frame,
                 text=f"{item} (${price}):",

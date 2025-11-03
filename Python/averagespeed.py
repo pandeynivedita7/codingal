@@ -6,7 +6,7 @@ avg = (a + b + c) / 3
 print("avg =", avg)
 
 if avg > a and avg > b and avg > c:# and means all true
-    print("%d is higher than %d, %d, %d" % (avg, a, b, c))
+    print("%d is higher than %d, %d, %d /n" % (avg, a, b, c))
 elif avg > a and avg > b:# but for check using and operator means all true
     print("%d is higher than %d, %d" % (avg, a, b))
 elif avg > a and avg > c:

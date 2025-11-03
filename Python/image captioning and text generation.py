@@ -49,7 +49,7 @@ def get_basic_caption(image, model="nlpconnect/vit-gpt2-image-captioning"):
     buffered.seek(0)
     headers = {"Authorization": f"Bearer {HF_API_KEY}"}
     response = requests.post(api_url, headers=headers, data=buffered.read())
-    result = response.json()
+    result = response.json()# {dic key:values}
     if isinstance(result, dict) and "error" in result:
         return f"[Error] {result['error']}"
     return result[0].get("generated_text", "No caption generated.")

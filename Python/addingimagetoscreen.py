@@ -7,11 +7,11 @@ SCREEN_WIDTH, SCREEN_HEIGHT = 500, 500
 
 # Initialize display surface and set title
 display_surface = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-pygame.display.set_caption('Adding image and background image')
+pygame.display.set_caption('Adding image and background image')# title
 
 # Load and scale images directly
 background_image = pygame.transform.scale(
-    pygame.image.load('background.png').convert(),
+    pygame.image.load('detected_objects.png').convert(),
     (SCREEN_WIDTH, SCREEN_HEIGHT)
 )
 
@@ -26,7 +26,7 @@ text = pygame.font.Font(None, 36).render('Hello World', True, pygame.Color('blac
 text_rect = text.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 110))
 
 def game_loop():
-    clock = pygame.time.Clock()
+    clock = pygame.time.Clock()#fps
     running = True
     while running:
         for event in pygame.event.get():

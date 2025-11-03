@@ -29,4 +29,5 @@ else:
 # Calculate and Display the total electricity bill
 # total amount = amount + surcharge
 total = amount + surcharge
-print("\nElectricity Bill = %.2f"  %total)# 3.45 float more 5  to 6 decimal values %.numberf(float)
+print("\nElectricity Bill ="  ,total)# 3.45 float more 5  to 6 decimal values %.numberf(float)
+print("\nElectricity Bill = %.2f"  %total)

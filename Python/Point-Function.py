@@ -1,6 +1,6 @@
 # Create class
 class Point:
-    def __init__(self, x=0, y=0):
+    def __init__(self, x=0, y=0):#default of x and y 0,0
         self.x = x
         self.y = y
 
@@ -10,4 +10,6 @@ class Point:
 
 # Create Object
 p1 = Point(2, 3)
-print(p1)
+p2=Point()
+print(p1)#2,3
+print(p2)#0,0

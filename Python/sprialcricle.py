@@ -9,7 +9,7 @@ my_pen.speed(0)  # Fastest speed
 
 size = 1  # Initial radius
 
-while size < 200:  # Limit the spiral
+while size < 200:  # Limit the spiral condition
     my_pen.circle(size)
     my_pen.left(20)  # Change angle for spiral effect
     size += 2  # Increase radius each time size=size+2

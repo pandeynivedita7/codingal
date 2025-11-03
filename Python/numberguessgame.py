@@ -7,12 +7,12 @@ secret_number = random.choice(numbers)
 print("Welcome to the Number Guessing Game!")
 print("I have chosen a number between 1 and 10.")
 
-while True:
+while True:#condition 
     guess = int(input("Enter your guess: "))
     
     if guess == secret_number:
         print("🎉 Congratulations! You guessed it right!")
-        break
+        break#stop game
     elif guess < secret_number:
         print("Too low! Try again.")
     else:

@@ -7,7 +7,7 @@ atten = int(input("enter the attendance of the student: "))
 
 if medical_cause == 'Y': #checking the condition 1
   print ("You are allowed for exam")
-else:
+else:#False
   if atten>=75:  #checking the condition 2
     print ("Allowed for exam")
   else:#false

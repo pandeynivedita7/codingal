@@ -1,4 +1,4 @@
-def check_age():
+def check_age():#reusing
     try:
         age = int(input("Enter your age: "))
 
