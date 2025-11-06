@@ -1,6 +1,6 @@
 import random
 
-options = ["Rock", "Paper", "Scissors"]
+options = ["Rock", "Paper", "Scissors"]# list[]
 
 user_choice = input("Choose Rock, Paper, or Scissors: ")
 

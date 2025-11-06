@@ -12,6 +12,8 @@ def plane_ride_cost(city):
         return 222
     elif city == "Los Angeles":
         return 475
+    else:
+        print("Wrong")
 
 # Function to calculate car rental cost
 def rental_car_cost(days):

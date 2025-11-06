@@ -10,7 +10,7 @@ pygame.display.set_caption("Draw Rectangle")
 # Game loop flag
 done = False
 
-while not done:
+while not done:#True
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             done = True

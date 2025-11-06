@@ -1,6 +1,6 @@
 #Take input from user
 rows = int(input("Please Enter the total Number of Rows  : "))#6
-number = 4 #initialise by 1
+number = 1 #initialise by 1
 
 print("Floyd's Triangle") 
 #outer loop for number of rows
