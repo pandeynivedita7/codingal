@@ -4,7 +4,7 @@ string = input("Please enter your own word: ")#apple
 # Take input of a character
 char = input("Please enter your own character: ")#p
 
-i = 0
+i = 0#while variable
 count = 0
 
 # Loop to find the occurrence of character 

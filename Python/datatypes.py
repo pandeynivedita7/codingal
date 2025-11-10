@@ -13,4 +13,5 @@ print("type of d:", type(d))
 # int a=6  float decimal b=4.5 name="nivedita" boolean="True or False"
 
 a=5
-print("This is datatype",type(a)) #type(varname)
+b=float(5)
+print("This is datatype",type(b),b) #type(varname)
