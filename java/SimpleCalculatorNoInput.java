@@ -13,6 +13,8 @@ public class SimpleCalculatorNoInput {
         double product = num1 * num2;
         double quotient = num1 / num2;
         double modulus = num1 % num2;
+        num1++;
+        num2--;
 
         // Step 3: Display results
         System.out.println("=== Simple Calculator ===");
@@ -24,6 +26,8 @@ public class SimpleCalculatorNoInput {
         System.out.println("Multiplication: " + product);
         System.out.println("Division: " + quotient);
         System.out.println("Division: " + modulus);
+        System.out.println("increment: " + num1);
+        System.out.println("decrement " + num2);
 
     }
 }

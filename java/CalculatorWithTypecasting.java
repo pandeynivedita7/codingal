@@ -5,7 +5,7 @@ public class CalculatorWithTypecasting {
     public static void main(String[] args) {
         // Step 1: Declare integer variables
         int num1 = 7;
-        int num2 = 2;
+        int num2 = 2;// make my 1 variable as double
 
         // Step 2: Perform basic arithmetic operations
         int sum = num1 + num2;
