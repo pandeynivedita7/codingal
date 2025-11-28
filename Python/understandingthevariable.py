@@ -17,3 +17,6 @@ print("your age is",age)
 print("\nHello", name, "\nWelcome to Codingal")# stmt with combination string and var
 age=input("enter your age")
 print(age)
+
+colour=input("enter your favourite colour")
+print("your favourite colour is",colour)

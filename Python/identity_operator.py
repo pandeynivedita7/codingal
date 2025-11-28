@@ -18,5 +18,5 @@ if x is y:#Flase because different container
     print("x & y have SAME identity")
 
 y = 30
-if x is not y:#false
+if x is not y:#True
     print("x & y have DIFFERENT identity")

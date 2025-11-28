@@ -36,7 +36,7 @@ def game():# function
         printBoard(theBoard)# display
         print("It's your turn," + turn + ".Move to which place?")
 
-        move = input() #input       
+        move = input("Please enter number") #input       
 
         if theBoard[move] == ' ':
             theBoard[move] = turn#X
@@ -101,9 +101,9 @@ def game():# function
     
     # Now we will ask if player wants to restart the game or not.
     restart = input("Do want to play Again?(y/n)")#.lower() upper()
-    if restart == "y" or restart == "Y":  
-        for key in board_keys:
-            theBoard[key] = " "
+    if restart == "y" or restart == "Y":
+        for key in board_keys:#display
+            theBoard[key] = " "# empty when youu restart
 
         game()
 

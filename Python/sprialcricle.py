@@ -5,7 +5,7 @@ my_wn.bgcolor("light blue")
 my_wn.title("Spiral Circle")
 
 my_pen = turtle.Turtle()
-my_pen.speed(0)  # Fastest speed
+my_pen.speed(0)  # Fastest speed 0 fastest 0 fast
 
 size = 1  # Initial radius
 

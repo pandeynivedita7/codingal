@@ -72,8 +72,8 @@ all_sprites_list = pygame.sprite.Group()
 # Instantiate the sprite
 sp1 = Sprite(WHITE, 20, 30)
 # Randomly position the sprite
-sp1.rect.x = random.randint(0, 480)
-sp1.rect.y = random.randint(0, 370)
+sp1.rect.x = random.randint(0, 480)#500
+sp1.rect.y = random.randint(0, 370)#400
 # Add the sprite to the group
 all_sprites_list.add(sp1)
 

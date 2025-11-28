@@ -5,7 +5,7 @@ import time# time library delay
 # Pick a number between 1 and 100
 number=random.randint(1, 100) #range lower and upper value can be anything
 
-def intro():#
+def intro():# function is a part of the program that performs a specific task reused
 	print("May I ask you for your name?")
 	# declaring name variable global so it can be accessed outside the function
 	global name# global rep local and gobal local its with the function global
@@ -37,9 +37,9 @@ def pick():
 			if guess<=100 and guess>=1: #if they are in range
 				guessesTaken=guessesTaken+1 #adds one guess each time the player is wrong
 				if guessesTaken<6:
-					if guess<number:
+					if guess<number:#6 <60
 						print("The guess of the number that you have entered is too low")
-					if guess>number:
+					if guess>number:#60>6
 						print("The guess of the number that you have entered is too high")
 					if guess != number:
 						time.sleep(.5)
@@ -50,20 +50,20 @@ def pick():
 						break 
 
 			
-			if guess>100 or guess<1: 
+			if guess>100 or guess<1: # -1 or more than 100
 				print("Silly Goose! That number isn't in the range!")
 				time.sleep(.25)
 				print("Please enter a number between 1 and 100")
 
-		except: #if a number wasn't entered
+		except: #if a number wasn't entered checks error that comes in try
 			print("I don't think that "+enter+" is a number. Sorry")
 			
-	if guess == number:
+	if guess == number:#60==60
 		guessesTaken = str(guessesTaken)
 		print('Good job, {}! You guessed my number in {} guesses!'.format(name, guessesTaken))
 
 	if guess != number:
-		print('Nope. The number I was thinking of was ' + str(number))
+		print('Nope. The number I was thinking of was '  +str(number))
 
 playagain="yes"
 while playagain=="yes" or playagain=="y" or playagain=="Yes" or playagain=="Y":#true

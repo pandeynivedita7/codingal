@@ -16,7 +16,7 @@
 a = 4 #assinging
 b = 5
 
-if (a == 1) != (b == 5):#t!=F F=F
+if (a == 1) != (b == 5):#F!=T T=T true
    print('Hello')
 
 

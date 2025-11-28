@@ -13,10 +13,11 @@ board = turtle.Turtle()# canvas
 
 # creating a square
 for i in range(4):
-	board.forward(100)# forward movement
+	board.forward(100)# forward and backward movement
 	board.left(90)#  left and right it will angle
 	i = i+1
 
 
-turtle.done()# hold the window
+turtle.done()
+# # hold the window
 
