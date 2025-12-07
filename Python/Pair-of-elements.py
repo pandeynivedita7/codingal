@@ -20,7 +20,7 @@ print("index1=%d, index2=%d" % pair_elements().twoSum((10,20,30,40,50,60,70),val
 
 #While looping:
 
-#10 stored
+#10 storedO
 
 #20 stored
 

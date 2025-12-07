@@ -92,7 +92,7 @@ def fire_bullet(x, y):
 
 def isCollision(enemyX, enemyY, bulletX, bulletY):
     # Check if there is a collision between the enemy and a bullet
-    distance = math.sqrt((enemyX - bulletX) ** 2 + (enemyY - bulletY) ** 2)
+    distance = math.sqrt((enemyX - bulletX) ** 2 + (enemyY - bulletY) ** 2)#2 poer 2 and sqrt root output will be 2
     return distance < COLLISION_DISTANCE
 
 #Game loop

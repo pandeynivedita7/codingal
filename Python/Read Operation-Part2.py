@@ -1,7 +1,7 @@
 # open the file in read mode file operation txt
 file_read = open('nive.txt', 'r')# 3 mode 1 write 2 read 3 append 
 print("File in Read Mode -")
-print(file_read.read())
+print(file_read.read(9))#read 2 types read() readline() readlines() 9 characters
 file_read.close()
 
 # open the file in write mode

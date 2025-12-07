@@ -1,11 +1,11 @@
 # Import necessary packages
-from tkinter import *
-from tkinter.filedialog import askopenfilename, asksaveasfilename
+from tkinter import *# * imports all classes and functions from tkinter.
+from tkinter.filedialog import askopenfilename, asksaveasfilename# Import file dialog functions for opening and saving files.
 
 # Setup Root Window
-window = Tk()
-window.title("Codingal's Text Editor")
-window.geometry("600x500")
+window = Tk()# Create the main application window.
+window.title("Nivedita Text Editor")
+window.geometry("600x500")# width x height
 window.rowconfigure(0, minsize=800, weight=1)
 window.columnconfigure(1, minsize=800, weight=1)#lets the widgets expand when the window is resized.
 
@@ -17,11 +17,11 @@ def open_file():
     )
     if not filepath:
         return
-    txt_edit.delete(1.0, END)
-    with open(filepath, "r") as input_file:
+    txt_edit.delete(1.0, END)#Clears the text editor before loading new content.
+    with open(filepath, "r") as input_file:# file open varname=open(filename, mode) r w a
         text = input_file.read()
         txt_edit.insert(END, text)
-    window.title(f"Codingal's Text Editor - {filepath}")
+    window.title(f"Nivedita Text Editor - {filepath}")
 
 # Function to Save a file
 def save_file():
@@ -44,7 +44,7 @@ btn_open = Button(fr_buttons, text="Open", command=open_file)
 btn_save = Button(fr_buttons, text="Save As...", command=save_file)
 
 btn_open.grid(row=0, column=0, sticky="ew", padx=5, pady=5)#sticky defines how widgets stretch (n = north, s = south, e = east, w = west).
-btn_save.grid(row=1, column=0, sticky="ew", padx=5, pady=5)#add space around widgets.
+btn_save.grid(row=1, column=0, sticky="ew", padx=5, pady=5)#add space around widgets.padxy used to add space around widgets.
 
 fr_buttons.grid(row=0, column=0, sticky="ns")
 txt_edit.grid(row=0, column=1, sticky="nsew")

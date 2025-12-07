@@ -15,7 +15,7 @@ def Create_obj():#def a method function reusedability
     print('function end...')
     return obj
     del obj
-  
+    #obj.Create_obj()# calling function inside function
 print('Calling Create_obj() function...')
 obj = Create_obj()# call function
 print('Program End...')

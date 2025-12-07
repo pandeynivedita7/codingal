@@ -30,3 +30,11 @@ class Student {
 // public static void main(String[] er)
 
 // public static void main(String[] input)
+
+/*
+ * class and object
+ * reuse car
+ * class blueprint 2 types properties and behaviour
+ * class dog contains variable 4 legs 1 tail colour etc behaviour(method) loyal
+ * etc contructor
+ */

@@ -1,4 +1,4 @@
-class Maggie {
+class Main {
     public static void main(String[] args) {
         System.out.println("My Maggie Recipe");
         Maggie();

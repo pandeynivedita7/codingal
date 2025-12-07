@@ -3,7 +3,7 @@ num = int(input())# put a number
 
 print("Enter a Number (Denominator): ")
 numd = int(input())# again a number 
-
+# \t tab space
 if num % numd == 0:# % rest == compare
     print("\n" + str(num) + " is divisible by " + str(numd))#+ operator acts like string operator where you join the string
 else:

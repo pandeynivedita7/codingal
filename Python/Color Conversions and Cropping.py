@@ -25,7 +25,7 @@ else:
     plt.show()
 
     # ✅ Crop image using NumPy slicing: rows 100–299, columns 200–399
-    cropped_image = image[100:300, 200:400]
+    cropped_image = image[100:300, 200:400]# [] list slicing
     
     # Convert cropped image to RGB for correct color display
     cropped_rgb = cv2.cvtColor(cropped_image, cv2.COLOR_BGR2RGB)

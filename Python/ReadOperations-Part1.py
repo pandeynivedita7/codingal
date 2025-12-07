@@ -1,6 +1,6 @@
 # open file and read its contents
-file = open('nive.txt', 'r')
-print(file.read())
+file = open('nive.txt', 'r')# variable name = open('file name','mode')
+print(file.read())# read 2 types read() readline() readlines()
 file.close()
 
 # open file and read its beginning 8 characters

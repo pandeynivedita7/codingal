@@ -14,3 +14,4 @@ c = temp
 
 print("\nAfter Swapping:")
 print("a =", a, "b =", b, "c =", c)
+# a=10 b=20 a=b 

@@ -5,3 +5,4 @@ def weather_condition():#without a parameter
 spring = "autumn"# function inside other function
 autumn = spring
 weather_condition()
+

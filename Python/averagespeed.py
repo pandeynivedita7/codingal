@@ -17,7 +17,12 @@ elif avg > a:
     print("%d is just higher than %d" % (avg, a))
 elif avg > b:
     print("%d is just higher than %d" % (avg, b))
-elif avg > c:
+elif avg > c:#%
     print("%d is just higher than %d" % (avg, c))
 else:
     print("invalid input")
+    #print(""%.2f" % avg)  # to print decimal value till 2 places
+# a=14
+#print("the value of a is" % a) old styled
+#%d int % .2f decimal value till 2 decimal float %s string
+#print("the value of a is %d" % a) new styled

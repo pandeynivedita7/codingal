@@ -1,9 +1,9 @@
-from tkinter import *
+from tkinter import *# * imports all classes and functions from tkinter.
 
 # Function to calculate Simple and Compound Interest
 def calculate_interest():
     try:#test block
-        principal = float(entry_principal.get())
+        principal = float(entry_principal.get())# get() method retrieves the text from the Entry widget.
         rate = float(entry_rate.get())
         time = float(entry_time.get())
 
@@ -19,7 +19,7 @@ def calculate_interest():
     except ValueError:#if error in your try it will come to except
         label_result_si.config(text="Invalid input. Enter numeric values.")
         label_result_ci.config(text="")
-
+# add message box 
 # Setup main window
 window = Tk()
 window.title("Interest Calculator App")
@@ -39,7 +39,7 @@ Label(window, text="Time Period (in years):").grid(row=2, column=0, padx=10, pad
 entry_time = Entry(window)
 entry_time.grid(row=2, column=1, padx=10, pady=10)
 
-# Button to calculate
+# Button to calculate  we will 2 button based on both interest
 btn_calculate = Button(window, text="Calculate", command=calculate_interest)
 btn_calculate.grid(row=3, column=0, columnspan=2, pady=15)
 
