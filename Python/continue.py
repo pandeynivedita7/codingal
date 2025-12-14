@@ -10,6 +10,6 @@ while var > 0:# 10>0
 
 print("Good bye!")  # display farewell
 
-#while i<=0
+#while i>=0
 #i=i+1
 #break

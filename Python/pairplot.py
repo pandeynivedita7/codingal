@@ -1,0 +1,16 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Load your local Iris.csv file
+df = pd.read_csv("Iris.csv")
+
+# Optional: remove the Id column if present
+if "Id" in df.columns:
+    df = df.drop(columns=["Id"])
+
+# Create pairplot
+sns.pairplot(df, hue="Species", diag_kind="kde")#sns.pairplot(df,hue="Species",diag_kind="kde") to plot pairplot with kde on diagonal
+
+plt.suptitle("Pair Plot of Iris Dataset", y=1.02)
+plt.show()

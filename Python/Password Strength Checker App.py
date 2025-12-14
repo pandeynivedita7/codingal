@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
-import re
+import re# regular expression module for pattern matching s%cenarios
 
 class PasswordStrengthChecker:
     def __init__(self, root):
@@ -24,7 +24,7 @@ class PasswordStrengthChecker:
         self.password_entry = Entry(input_frame, font=("Arial", 12), width=35, show="●")
         self.password_entry.pack(padx=20, pady=5)
         self.password_entry.bind("<KeyRelease>", self.check_strength)
-
+        # Bind key release event for real-time checking (<event> calling function)
         # Strength Meter Frame
         meter_frame = Frame(root, bg="#f0f0f0")
         meter_frame.pack(pady=20)

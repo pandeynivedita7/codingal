@@ -1,6 +1,5 @@
 public class WrapperClassDemo {
     public static void main(String[] args) {
-
         // 1. AUTOBOXING - Primitive to Wrapper (automatic)
         Integer num1 = 10; // int to Integer JVM automatically converts
         Double num2 = 5.5; // double to Double
@@ -45,7 +44,7 @@ public class WrapperClassDemo {
         // 5. WRAPPER TO STRING
         Integer num5 = 500;
         String str3 = num5.toString();
-        String str4 = Integer.toString(600);
+        String str4 = Integer.toString(600);// str4="600"
 
         System.out.println("\n=== WRAPPER TO STRING ===");
         System.out.println("Using toString(): " + str3);
@@ -56,8 +55,8 @@ public class WrapperClassDemo {
         System.out.println("MAX_VALUE of Integer: " + Integer.MAX_VALUE);
         System.out.println("MIN_VALUE of Integer: " + Integer.MIN_VALUE);
         System.out.println("Compare 10 and 20: " + Integer.compare(10, 20));
-        System.out.println("Is 'A' a digit? " + Character.isDigit('A'));
-        System.out.println("Is '5' a digit? " + Character.isDigit('5'));
+        System.out.println("Is 'A' a digit? " + Character.isDigit('A'));// false
+        System.out.println("Is '5' a digit? " + Character.isDigit('5'));// true
         System.out.println("Uppercase of 'a': " + Character.toUpperCase('a'));
 
         // 7. COMPARISON

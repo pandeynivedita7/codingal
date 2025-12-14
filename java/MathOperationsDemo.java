@@ -14,6 +14,9 @@ public class MathOperationsDemo {
         System.out.println("Min: " + Math.min(a, b));
         System.out.println("Random: " + (int) Math.random() * 20); // generates a random number between 0 and 20 by
                                                                    // default 0 double value int type casting
+        // math.random() generates a double value between 0.0 and 1.0
+        // type casting to int will always result in 0 here
+        
 
     }
 }

@@ -24,7 +24,7 @@ class DenominationCalculator:
         
         # Calculate Button
         calc_button = Button(root, text="Calculate", font=("Arial", 12, "bold"), 
-                            bg="#4CAF50", fg="white", command=self.calculate, padx=20, pady=10)
+                            bg="#4CAF50", fg="white", command=self.calculate, padx=20, pady=10)# padx and pady location
         calc_button.pack(pady=15)
         
         # Result Frame
@@ -58,7 +58,8 @@ class DenominationCalculator:
             #** power function 2 raise floor division // whole % reminder
             notes_500 = remaining // 500
             remaining = remaining % 500
-            
+            # notes_500 = remaining // 50
+            # remaining = remaining % 50
             notes_100 = remaining // 100
             remaining = remaining % 100
             

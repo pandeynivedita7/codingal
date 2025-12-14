@@ -1,6 +1,6 @@
 def factorial(x):
-    '''this is a recursive function to find the factorial of an integer'''#__doc__ explaination
-    
+    '''this is a recursive function to find the factorial of an integer '''#__doc__ explaination 
+    # is a part code that is not executed
     if x == 0 or x == 1:
         return 1# 5! = 5*4*3*2*1
     else:

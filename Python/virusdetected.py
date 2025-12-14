@@ -9,7 +9,7 @@ root.geometry("200x200")
 # Function for Displaying Warning Message
 # This will be called once the button is clicked
 # messagebox.showwarning("Window Name", "Text to be displayed")
-def msg():
+def msg():# function
     messagebox.showwarning("Alert", "Stop! Virus Found.")
 
 # Adding Button Widget to Window
