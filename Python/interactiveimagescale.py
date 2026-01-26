@@ -31,7 +31,7 @@ def apply_color_filter(image, filter_type):#
     return filtered_image
 
 # Load the image
-image_path = 'road.jpg'  # Provide your image path
+image_path = 'sunset.jpg'  # Provide your image path
 image = cv2.imread(image_path)
 
 if image is None:

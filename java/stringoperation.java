@@ -23,3 +23,14 @@ String s = "program";
 System.out.println(s.startsWith("pro")); // true
 System.out.println(s.endsWith("gram"));  // true
 System.out.println(s.contains("gra"));   // true
+
+
+String s = "narrow";
+System.out.println(s.indexOf("na"));//0
+
+
+String s = "arena";
+System.out.println(s.indexOf("na"));
+
+String s = "banana";
+System.out.println(s.indexOf("na", 3));//4

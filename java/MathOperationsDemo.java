@@ -8,6 +8,7 @@ public class MathOperationsDemo {
         System.out.println("Multiply: " + Math.multiplyExact(a, b));
         System.out.println("Divide: " + (a / b));
         System.out.println("Power: " + Math.pow(a, b));
+        System.out.println("Power: " + Math.sqrt(a));
         System.out.println("Square Root: " + Math.sqrt(a));
         System.out.println("Absolute: " + Math.abs(-25));
         System.out.println("Max: " + Math.max(a, b));

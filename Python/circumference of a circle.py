@@ -2,7 +2,7 @@ import math  # for using the value of pi
 
 # Function to calculate circumference
 def circumference(radius):
-    return 2 * math.pi * radius
+    return 2 * 3.14 * radius
 
 # Taking input from user
 r = float(input("Enter the radius of the circle: "))

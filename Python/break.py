@@ -1,5 +1,5 @@
 # Take user input
-a = input("Enter a word: ")
+a = input("Enter a word: ")#apple
 
 # Program to check for 'A' using break
 for i in a:  # iterate through each character travesal
@@ -8,3 +8,4 @@ for i in a:  # iterate through each character travesal
         break  # break statement
 else:
     print("A not found")  # display result
+    # or choice  and both condition true not opposite

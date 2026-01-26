@@ -1,0 +1,7 @@
+path: C:/Users/swapn/Downloads/codingal/CodingalGit/codingal/Python/Deep learning project/edge_fo_surveillance/data/edge1
+
+train: images/train
+val: images/val
+
+names:
+  0: person

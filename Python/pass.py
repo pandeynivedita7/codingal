@@ -1,6 +1,6 @@
 # Iterate through numbers 0 to 9
-for x in range(10):
-    if x % 20 == 0:  # condition 1
+for x in range(10):#9
+    if x % 20 == 0:  # condition 1 % modulus reminder
         print("twist")
     elif x % 15 == 0:  # condition 2 5
         pass  # do nothing
@@ -10,3 +10,5 @@ for x in range(10):
         print("buzz")
     else:  # condition 5
         print(x)
+
+        #

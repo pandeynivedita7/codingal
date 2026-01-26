@@ -1,12 +1,12 @@
-import cv2
-import mediapipe as mp
-import time
+import cv2# computer vsiion 2 for images
+import mediapipe as mp#hand tracking
+import time#time module for debouncing
 import numpy as np#For matrix operations (used for sepia filter).
 
 # Initialize MediaPipe Hands
 mp_hands = mp.solutions.hands
-hands = mp_hands.Hands(min_detection_confidence=0.7, min_tracking_confidence=0.7)
-mp_draw = mp.solutions.drawing_utils
+hands = mp_hands.Hands(min_detection_confidence=0.7, min_tracking_confidence=0.7)# 70% confidence to detect and track hands
+mp_draw = mp.solutions.drawing_utils#Utility to draw hand landmarks
 
 # List of filters
 filters = [
@@ -37,11 +37,11 @@ def apply_filter(frame, filter_type):
         sepia_filter = np.array([[0.272, 0.534, 0.131],#Red channel
                                  [0.349, 0.686, 0.168],#Green channel
                                  [0.393, 0.769, 0.189]])#Blue channel
-        sepia_frame = cv2.transform(frame, sepia_filter)
+        sepia_frame = cv2.transform(frame, sepia_filter)#Apply sepia filter
         sepia_frame = np.clip(sepia_frame, 0, 255)
         return sepia_frame.astype(np.uint8)
     elif filter_type == 'NEGATIVE':
-        return cv2.bitwise_not(frame)
+        return cv2.bitwise_not(frame)#Invert colors
     elif filter_type == 'BLUR':
         return cv2.GaussianBlur(frame, (15, 15), 0)
     return frame

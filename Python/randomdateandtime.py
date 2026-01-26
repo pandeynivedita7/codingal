@@ -7,7 +7,7 @@ def getRandomDate(startDate, endDate):
     
     # Generate random number
     randomGenerator = random.random()
-    dateFormat = '%Y/%d/%m'
+    dateFormat = '%Y/%d/%m'# each components of date
     
     # Convert start and end dates into time
     startTime = time.mktime(time.strptime(startDate, dateFormat))

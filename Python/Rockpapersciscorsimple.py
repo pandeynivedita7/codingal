@@ -11,7 +11,7 @@ print("Computer chose:", computer_choice)
 
 if user_choice == computer_choice:
     print("It's a tie!")
-elif user_choice == "Rock" and computer_choice == "Scissors":
+elif user_choice == "Rock" and computer_choice == "Scissors":# true if both are true
     print("Rock smashes scissors! You win!")
 elif user_choice == "Paper" and computer_choice == "Rock":
     print("Paper covers rock! You win!")

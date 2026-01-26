@@ -12,4 +12,4 @@ print("Good bye!")  # display farewell
 
 #while i>=0
 #i=i+1
-#break
+#break stop # continue skip # pass ignore Return result

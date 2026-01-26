@@ -1,4 +1,4 @@
-import cv2
+import cv2#computer vision 2
 
 # Load the pre-trained Haar Cascade Classifier for face detection
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')# haar pertrained model

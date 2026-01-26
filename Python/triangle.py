@@ -3,7 +3,7 @@ import turtle
 # Create screen and set background color
 screen1 = turtle.Screen()
 screen1.bgcolor("lightblue")
-screen1.setup(300, 400)
+screen1.setup(300, 400)# width and height
 screen1.title("Triangle")
 
 # Create turtle object

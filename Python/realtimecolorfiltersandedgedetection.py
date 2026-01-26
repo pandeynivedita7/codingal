@@ -41,7 +41,7 @@ def apply_filter(image: np.ndarray, filter_type: str) -> np.ndarray:#def apply_f
 # 2.  Main – interactive loop
 # ---------------------------
 def main():
-    image_path = "road.jpg"         # 🔁 change to the file you want
+    image_path = "C:\\Users\\swapn\\Downloads\\codingal\\CodingalGit\\codingal\\Python\\sunset.jpg"         # 🔁 change to the file you want
     image = cv2.imread(image_path)
 
     if image is None:

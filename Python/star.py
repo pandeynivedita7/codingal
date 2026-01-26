@@ -1,9 +1,9 @@
 import turtle
 
-t = turtle.Turtle()
+t = turtle.Turtle()# creating window
 
-for _ in range(5):
-    t.forward(150)
-    t.right(144)
+for _ in range(5):# loop to draw a star side
+    t.forward(150)# move forward by 150 units
+    t.right(144)# turn right by 144 degrees
 
-turtle.done()
+turtle.done()# finish the drawing

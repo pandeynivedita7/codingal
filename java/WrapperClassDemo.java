@@ -1,5 +1,5 @@
 public class WrapperClassDemo {
-    public static void main(String[] args) {
+    public static void main(String[] args) {// wrapper class is implicitly converting primitive data types to object
         // 1. AUTOBOXING - Primitive to Wrapper (automatic)
         Integer num1 = 10; // int to Integer JVM automatically converts
         Double num2 = 5.5; // double to Double
@@ -20,7 +20,7 @@ public class WrapperClassDemo {
         System.out.println("Primitive int: " + primitiveInt);
         System.out.println("Primitive double: " + primitiveDouble);
 
-        // 3. EXPLICIT CONVERSION using valueOf()
+        // 3. EXPLICIT CONVERSION using valueOf() int a=10 
         Integer num3 = Integer.valueOf(100);// create object of Integer class
         Double num4 = Double.valueOf(99.99);// create object of Double class
 
@@ -34,7 +34,8 @@ public class WrapperClassDemo {
         // string methods to convert 1 datatype to another
         Integer converted1 = Integer.parseInt(str1); // String to int
         Double converted2 = Double.parseDouble(str2); // String to double
-        Integer converted3 = Integer.valueOf(str1); // String to Integer
+        Integer converted3 = Integer.valueOf(str1); // String to Integer 
+        // Double converted3 = Double.valueOf(str1);
 
         System.out.println("\n=== STRING CONVERSION ===");
         System.out.println("parseInt(\"123\"): " + converted1);
@@ -43,8 +44,8 @@ public class WrapperClassDemo {
 
         // 5. WRAPPER TO STRING
         Integer num5 = 500;
-        String str3 = num5.toString();
-        String str4 = Integer.toString(600);// str4="600"
+        String str3 = num5.toString();// to string method of integer class
+        String str4 = Integer.toString(600);// str4="600"// static method of integer class
 
         System.out.println("\n=== WRAPPER TO STRING ===");
         System.out.println("Using toString(): " + str3);

@@ -1,5 +1,5 @@
 import math  # importing math module
-squareroot=math.sqrt(16)
+squareroot=math.sqrt(16)# math.abs(-7) math.pow(2,3)
 print(squareroot)
 
 
