@@ -1,23 +1,23 @@
 import java.util.Scanner;
 
-public class SumToProgram {
+public class SumToProgram1 {
 
     // Returns the smallest i such that 1 + 2 + ... + i > num
-    static int sumTo(int num) {// 10
+    static int sumTo(int num) {
         int i = 1;
         int sum = 0;
 
         while (true) {
-            sum += i;// 7+5=12
-            if (sum > num) {// 12>10
-                return i;// 5
+            sum += i;// 1+2=3+3=6 6+4=10
+            if (sum > num) {// 10>7
+                return i;
             }
             i++;// 5
         }
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);// 7
 
         System.out.print("Enter a number: ");
         int num = sc.nextInt();
